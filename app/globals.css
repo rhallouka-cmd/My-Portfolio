@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-primary text-light font-sans overflow-x-hidden;
+}
+
+/* Glassmorphism effect */
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-lg;
+}
+
+/* Smooth transitions - Already provided by Tailwind */
+
+/* Custom gradients */
+.gradient-text {
+  @apply bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent;
+}
+
+/* Scroll bar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-accent rounded-full hover:bg-blue-600;
+}
+
+/* Selection color */
+::selection {
+  @apply bg-accent text-light;
+}
