@@ -2,12 +2,5 @@
   "buildCommand": "next build",
   "devCommand": "next dev",
   "installCommand": "npm install",
-  "framework": "nextjs",
-  "env": {
-    "NEXT_PUBLIC_SITE_URL": {
-      "description": "The public site URL",
-      "required": false,
-      "default": "https://rabab-portfolio.vercel.app"
-    }
-  }
+  "framework": "nextjs"
 }
